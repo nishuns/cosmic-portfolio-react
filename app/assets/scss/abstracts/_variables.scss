@@ -1,0 +1,68 @@
+/* ==========================================================================
+   1. CSS Custom Properties (The Single Source of Truth)
+   ========================================================================== */
+
+:root {
+    /* ----- FONT FAMILIES ----- */
+    --font-primary: 'Shadows Into Light', cursive;
+    --font-roboto: 'Roboto', sans-serif;
+    --font-montserrat: 'Montserrat', sans-serif;
+    --font-ubuntu: 'Ubuntu', sans-serif;
+
+    /* ----- CORE PALETTE ----- */
+    --color-light-bg: #FFFFFF;
+    --color-light-text-primary: #111111;
+    --color-light-text-secondary: #666666;
+    --color-light-border: #e0e0e0;
+
+    --color-dark-bg-primary: #0c0022;
+    --color-dark-bg-secondary: #01364b;
+    --color-dark-text-primary: #ffffff;
+    --color-dark-text-secondary: #f0f0f0;
+
+    /* ----- GRADIENTS ----- */
+    --gradient-content-page: linear-gradient(135deg, var(--color-dark-bg-primary) 0%, var(--color-dark-bg-secondary) 100%);
+    --gradient-text-light: linear-gradient(45deg, var(--color-dark-text-primary), var(--color-dark-text-secondary));
+
+    /* ----- PARTICLE & EFFECTS PALETTE ----- */
+    --color-cosmic-blue: rgba(102, 126, 234, 1);
+    --color-cosmic-purple: rgba(155, 89, 182, 1);
+    --color-cosmic-cyan: rgba(52, 211, 153, 1);
+    --color-cosmic-pink: rgba(236, 72, 153, 1);
+    --color-cosmic-gold: rgba(251, 191, 36, 1);
+}
+
+
+/* ==========================================================================
+   2. SCSS Variable Mappings (For use in mixins, functions, etc.)
+   ========================================================================== */
+
+// ----- FONT FAMILIES -----
+$font-primary: var(--font-primary);
+$font-roboto: var(--font-roboto);
+$font-montserrat: var(--font-montserrat);
+$font-ubuntu: var(--font-ubuntu);
+
+// ----- CORE PALETTE -----
+// Light Theme
+$color-light-bg: var(--color-light-bg);
+$color-light-text-primary: var(--color-light-text-primary);
+$color-light-text-secondary: var(--color-light-text-secondary);
+$color-light-border: var(--color-light-border);
+
+// Dark Theme
+$color-dark-bg-primary: var(--color-dark-bg-primary);
+$color-dark-bg-secondary: var(--color-dark-bg-secondary);
+$color-dark-text-primary: var(--color-dark-text-primary);
+$color-dark-text-secondary: var(--color-dark-text-secondary);
+
+// ----- GRADIENTS -----
+$gradient-content-page: var(--gradient-content-page);
+$gradient-text-light: var(--gradient-text-light);
+
+// ----- PARTICLE & EFFECTS PALETTE -----
+$color-cosmic-blue: var(--color-cosmic-blue);
+$color-cosmic-purple: var(--color-cosmic-purple);
+$color-cosmic-cyan: var(--color-cosmic-cyan);
+$color-cosmic-pink: var(--color-cosmic-pink);
+$color-cosmic-gold: var(--color-cosmic-gold);

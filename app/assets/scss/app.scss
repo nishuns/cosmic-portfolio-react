@@ -1,0 +1,26 @@
+// ==========================================================================
+// Main SCSS Entry Point
+// ==========================================================================
+
+// Abstracts: Variables, functions, mixins, placeholders
+@use 'abstracts' as *;
+
+// Base: Reset, normalize, base element styles
+// @use 'partials/base';
+
+// Layout: Header, footer, navigation, sidebar, etc.
+// @use 'layout/header';
+// @use 'layout/footer';
+// @use 'layout/navigation';
+
+// Components: Reusable UI components
+@use 'components/button';
+// @use 'components/card';
+// @use 'components/modal';
+
+// Pages: Page-specific styles
+// @use 'pages/home';
+// @use 'pages/about';
+
+// Utilities: Helper classes and utilities
+// Add utility classes here as needed

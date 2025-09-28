@@ -1,0 +1,27 @@
+// ==========================================================================
+// Button Component
+// ==========================================================================
+
+// Import variables from _variables.scss
+@use '../abstracts/variables' as v;
+
+.btn {
+  //   @include button-base;
+
+  // Button variants
+  &--primary {
+    background-color: v.$color-light-bg;
+    color: v.$color-cosmic-blue;
+
+    &:hover:not(:disabled) {
+      background-color: v.$color-cosmic-blue;
+      color: v.$color-light-bg;
+    }
+
+    &:active {
+      background-color: v.$color-cosmic-blue;
+      color: v.$color-light-bg;
+      transform: translateY(1px);
+    }
+  }
+}

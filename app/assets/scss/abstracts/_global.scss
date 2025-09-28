@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
+
+* {
+    font-family: "Shadows Into Light Two", cursive;
+}
+
+html {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0 !important;
+}
+
+/* shake animation for contact us page */
+.shake {
+    animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+.height-100 {
+    height: 100vh;
+}
