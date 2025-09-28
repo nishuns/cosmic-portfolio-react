@@ -1,3 +1,5 @@
 <template>
-    <div class="pf-scroll-view-component"/>
+    <div class="pf-scroll-view-component">
+        <slot/>
+    </div>
 </template>

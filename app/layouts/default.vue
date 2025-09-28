@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>Some default layout content shared across all pages</p>
+    <button type="button"><i class="bx bx-hot"></i> Back</button>
     <slot />
   </div>
 </template>

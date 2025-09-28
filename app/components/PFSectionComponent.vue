@@ -1,5 +1,5 @@
 <template>
-  <div class="section-block">
+  <div class="pf-section-component">
     <slot />
   </div>
 </template>
