@@ -10,5 +10,25 @@ export default defineNuxtConfig({
     '@nuxt/scripts',
     '@nuxt/test-utils',
     '@nuxt/ui'
-  ]
+  ],
+
+  css: [
+    '~/assets/scss/app.scss'
+  ],
+
+  app: {
+    pageTransition: { name: 'page', mode: 'out-in' },
+  },
+
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: `
+            @use "~/assets/scss/abstracts" as *;
+          `
+        }
+      }
+    }
+  }
 })
