@@ -17,11 +17,6 @@ export default defineNuxtConfig({
   ],
 
   app: {
-    head: {
-      link: [
-        { rel: 'stylesheet', href: 'https://unpkg.com/boxicons@latest/css/boxicons.min.css"'},
-      ]
-    },
     pageTransition: { name: 'page', mode: 'out-in' },
   },
 
