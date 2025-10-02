@@ -1,4 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
+import Aura from '@primeuix/themes/aura';
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
@@ -9,12 +12,21 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/scripts',
     '@nuxt/test-utils',
-    '@nuxt/ui'
+    '@nuxt/ui',
+    '@primevue/nuxt-module'
   ],
 
   css: [
-    '~/assets/scss/app.scss'
+    '~/assets/scss/app.scss',
   ],
+
+  primevue: {
+        options: {
+            theme: {
+                preset: Aura
+            }
+        }
+    },
 
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },

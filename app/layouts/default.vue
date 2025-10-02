@@ -1,12 +1,14 @@
 <template>
   <div>
     <button type="button" class="global__back-button"><PhArrowLeft /> Back</button>
+    <Button label="Submit" />
     <slot />
   </div>
 </template>
 
 <script lang="ts" setup>
 import { PhArrowLeft } from '@phosphor-icons/vue';
+import Button from 'primevue/button';
 </script>
 
 <style scoped>
